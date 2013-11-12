@@ -28,38 +28,65 @@ echo $this->headScript();
         <div id="str-body">
             <div class="container">
             </div>
+            <div class="scroll-trigger" ></div>
         </div>
         <script type="text/javascript" >
-          /**
-           * @autor: B.j.Ouwehand
-           *
-           * Proof of concept
-           *
-           */
+
             var container = document.querySelector('.container');
             var msnry;
             var url = '/mason/';
-            $.ajax({
-                url: url,
-                dataType: 'json',
-                type : 'get',
-                success: function(data){
-                    $.each(data, function( index, value ) {
-                        console.log(value.name);
+            var msnry = new Masonry(container);
 
-                        // create the html
-                        var elem = $('<div/>', {
-                            class: 'item',
-                            text: value.name
-                        })
-                        elem.appendTo('.container');
+            function isScrolledIntoView(elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
 
-                        // rewrite the masonry
-                        var msnry = new Masonry(container);
-                        msnry.appended( elem );
+                var elemTop = $(elem).offset().top;
+                var elemBottom = elemTop + $(elem).height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+
+            /**
+             * @autor: B.j.Ouwehand
+             *
+             * Proof of concept
+             *
+             */
+            function xhttpRequest () {
+
+                $.ajax({
+                    url: url,
+                    dataType: 'json',
+                    type : 'get',
+                    success: function(data){
+
+                        $.each(data, function( index, value ) {
+
+                            // create the html
+                            var elem = $('<div/>', {
+                                class: 'item',
+                                text: value.name
+                            })
+                            elem.appendTo('.container');
+
+                            // rewrite the masonry
+
+                            msnry.appended( elem );
+
+
+                        });
                         msnry.layout();
+                    }
+                });
+            }
 
-                    });
+            xhttpRequest();
+
+            $(document).on('scroll', function() {
+                if ( isScrolledIntoView('.scroll-trigger') ) {
+                    console.log('scroll');
+                    xhttpRequest();
                 }
             });
       </script>
