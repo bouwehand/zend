@@ -38,9 +38,12 @@ class Application_Model_ProductMapper
     public function fetchJson() {
         $resultSet = $this->getDbTable()->fetchAll();
         $entries   = array();
-        foreach ($resultSet as $row) {
-            die(print_r($row));
+        foreach ($resultSet as $v => $row) {
+            $entries[$v]->id = $row->id;
+            $entries[$v]->name = $row->name;
+
         }
+        return json_encode($entries);
     }
 }
 

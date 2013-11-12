@@ -45,17 +45,11 @@
         // get counter from request for pagination
         $request = $this->getRequest();
         // check if is ajaxRequest
-        if ( $this->CheckAjax(false) ) {
-            // Get the products
+        if ( $this->CheckAjax($request) ) {
+            // Get the products and die Json
             $products = new Application_Model_ProductMapper();
             $products = $products->fetchJson();
-            die(">");
-            exit();
+            die($products);
         }
-
     }
-
-
-
-
 }
