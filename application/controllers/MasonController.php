@@ -7,19 +7,51 @@
  */
  class MasonController extends Zend_Controller_Action {
 
-    public function init()
+     /**
+      * CheckAjax
+      *
+      * Checks if request is Ajax, flag for turning it
+      * on and off
+      *
+      * @param  $request    Mixed
+      * @return $bool       bool
+      *
+      */
+    protected function CheckAjax ($request) {
+
+        // Disable check with flag
+        if ( $request === false ) {
+            return true;
+        }
+
+        //check
+        if( $request->isXmlHttpRequest() ) {
+            return true;
+        } else return false;
+    }
+
+
+     public function init()
     {
         /* Initialize action controller here */
 
-
-
     }
 
-    public function indexAction()
-    {
-        // action body
+     /**
+      * Action body
+      */
+     public function indexAction() {
 
-
+        // get counter from request for pagination
+        $request = $this->getRequest();
+        // check if is ajaxRequest
+        if ( $this->CheckAjax(false) ) {
+            // Get the products
+            $products = new Application_Model_ProductMapper();
+            $products = $products->fetchJson();
+            die(">");
+            exit();
+        }
 
     }
 
