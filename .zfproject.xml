@@ -15,6 +15,9 @@
         <controllerFile controllerName="Guestbook">
           <actionMethod actionName="index"/>
         </controllerFile>
+          <controllerFile controllerName="Mason">
+              <actionMethod actionName="index"/>
+          </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Guestbook"/>
@@ -27,9 +30,12 @@
       <modelsDirectory>
         <dbTableDirectory>
           <dbTableFile dbTableName="Guestbook"/>
+          <dbTableFile dbTableName="Product"/>
         </dbTableDirectory>
         <modelFile modelName="GuestbookMapper"/>
         <modelFile modelName="Guestbook"/>
+        <modelFile modelName="Product"/>
+        <modelFile modelName="ProductMapper"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <viewsDirectory>
