@@ -1,6 +1,6 @@
 <?php
 require_once 'Zend/Db/Table/Abstract.php';
-class Application_Model_ProductMapper
+class Application_Model_CategoryMapper
 {
     protected $_dbTable;
 
@@ -20,7 +20,7 @@ class Application_Model_ProductMapper
 
     public function getDbTable() {
         if (null === $this->_dbTable) {
-            $this->setDbTable('Application_Model_DbTable_Product');
+            $this->setDbTable('Application_Model_DbTable_Category');
         }
         return $this->_dbTable;
     }
@@ -33,22 +33,15 @@ class Application_Model_ProductMapper
 
         foreach ($resultSet as $i => $row) {
             $entries[$i] = $row->toArray();
-            $entries[$i]['category']= $row->findDependentRowset('Application_Model_DbTable_Category')->toArray();
-            $entries[$i]['image']   = $row->findDependentRowset('Application_Model_DbTable_Image')->toArray();
         }
         return $entries;
     }
 
     public function fetchJson() {
-        $resultSet = $this->getDbTable();
         $resultSet = $this->getDbTable()->fetchAll();
-
         $entries   = array();
-
-        foreach ($resultSet as $i => $row) {
-            $entries[$i] = $row->toArray();
-            $entries[$i]['category']= $row->findDependentRowset('Application_Model_DbTable_Category')->toArray();
-            $entries[$i]['image']   = $row->findDependentRowset('Application_Model_DbTable_Image')->toArray();
+        foreach ($resultSet as $row) {
+            $entries[] = $row->toArray();
         }
         return json_encode($entries);
     }

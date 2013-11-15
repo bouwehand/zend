@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d30105-abfe-4b9a-9a32-dc89b08281c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/imagesloaded.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/DbTable/Category.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/CategoryMapper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/helpers/Mason.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.zfproject.xml" afterPath="$PROJECT_DIR$/.zfproject.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/MasonController.php" afterPath="$PROJECT_DIR$/application/controllers/MasonController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/DbTable/Product.php" afterPath="$PROJECT_DIR$/application/models/DbTable/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/ProductMapper.php" afterPath="$PROJECT_DIR$/application/models/ProductMapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/mason/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/mason/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/styles.css" afterPath="$PROJECT_DIR$/public/styles/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zf_test.iws" />
@@ -28,99 +36,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MasonController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/MasonController.php">
+      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="510">
+            <state line="5" column="0" selection-start="117" selection-end="415" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductMapper.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/ProductMapper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="27" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-28.916666" vertical-offset="86" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="23" selection-start="170" selection-end="170" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="750">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/mason/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="28" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.7689573" vertical-offset="506" max-vertical-offset="1365">
-              <folding>
-                <element signature="e#6#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-1.10.2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/jquery-1.10.2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1018" column="10" selection-start="25237" selection-end="25237" vertical-scroll-proportion="0.0" vertical-offset="15767" max-vertical-offset="146925">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imagesloaded.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/imagesloaded.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="836" column="0" selection-start="29436" selection-end="29436" vertical-scroll-proportion="0.0" vertical-offset="10442" max-vertical-offset="12630">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="masonry.pkgd.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/masonry.pkgd.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24546" selection-start="24682" selection-end="24682" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeadScript.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/Zend/View/Helper/HeadScript.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="31" selection-start="7164" selection-end="7164" vertical-scroll-proportion="3.5" vertical-offset="3024" max-vertical-offset="7455">
+            <state line="80" column="34" selection-start="2734" selection-end="2734" vertical-scroll-proportion="-17.666666" vertical-offset="731" max-vertical-offset="1575">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HtmlPage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/Zend/View/Helper/HtmlPage.php">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
+            <state line="10" column="16" selection-start="209" selection-end="209" vertical-scroll-proportion="0.17281106" vertical-offset="0" max-vertical-offset="868">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuestbookController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/GuestbookController.php">
+      <file leaf-file-name="Image.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Image.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="391" selection-end="391" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="645">
+            <state line="13" column="10" selection-start="404" selection-end="404" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+      <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="360">
+            <state line="4" column="33" selection-start="114" selection-end="114" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryMapper.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/CategoryMapper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="0" selection-end="1193" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageMapper.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/ImageMapper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="1" selection-start="932" selection-end="932" vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MasonController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/MasonController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="0" selection-start="1789" selection-end="1789" vertical-scroll-proportion="-23.291666" vertical-offset="536" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -144,23 +144,33 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/models/GuestbookMapper.php" />
-        <option value="$PROJECT_DIR$/application/models/Guestbook.php" />
-        <option value="$PROJECT_DIR$/application/views/scripts/guestbook/index.phtml" />
-        <option value="$PROJECT_DIR$/application/configs/application.ini" />
-        <option value="$PROJECT_DIR$/application/forms/Guestbook.php" />
-        <option value="$PROJECT_DIR$/application/views/scripts/guestbook/sign.phtml" />
-        <option value="$PROJECT_DIR$/application/controllers/GuestbookController.php" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
-        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/application/models/Category.php" />
+        <option value="$PROJECT_DIR$/library/Zend/Db/Table/Row/Abstract.php" />
+        <option value="$PROJECT_DIR$/library/Zend/Db/Table/Abstract.php" />
+        <option value="$PROJECT_DIR$/library/Zend/Db/Statement.php" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/Category.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/application/models/CategoryMapper.php" />
+        <option value="$PROJECT_DIR$/application/views/helpers/Mason.php" />
+        <option value="$PROJECT_DIR$/application/views/scripts/mason/category.phtml" />
+        <option value="$PROJECT_DIR$/application/models/ImageMapper.php" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/Image.php" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/Product.php" />
+        <option value="$PROJECT_DIR$/application/models/ProductMapper.php" />
         <option value="$PROJECT_DIR$/application/controllers/MasonController.php" />
-        <option value="$PROJECT_DIR$/library/Zend/View/Helper/HeadScript.php" />
-        <option value="$PROJECT_DIR$/public/.htaccess" />
-        <option value="$PROJECT_DIR$/public/js/masonry.pkgd.min.js" />
-        <option value="$PROJECT_DIR$/public/js/imagesloaded.js" />
-        <option value="$PROJECT_DIR$/public/js/jquery-1.10.2.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/mason/index.phtml" />
+        <option value="$PROJECT_DIR$/public/styles/styles.css" />
       </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <option name="servers">
+      <server host="zend.local" name="zend.local" use_path_mappings="true">
+        <path_mappings>
+          <path_mapping local_path="$PROJECT_DIR$/public/index.php" remote_path="$PROJECT_DIR$/public/index.php" />
+          <path_mapping local_path="$PROJECT_DIR$/library/Zend/Db/Table/Abstract.php" remote_path="/usr/local/ZendFramework/library/Zend/Db/Table/Abstract.php" />
+        </path_mappings>
+      </server>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
@@ -242,7 +252,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,6 +288,134 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mason" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DbTable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -267,11 +423,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pimcore/pimcore" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../magento" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -283,6 +440,12 @@
         </serverdata>
       </server>
     </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/views/scripts/mason" />
+      <recent name="$PROJECT_DIR$/application/models" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.load.mysql.php">
     <configuration default="false" name="load.mysql.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/zf_test/application/scripts/load.mysql.php">
@@ -339,8 +502,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="29" width="1680" height="1021" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="29" width="1680" height="1021" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -348,7 +511,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33095238" sideWeight="0.6002167" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33095238" sideWeight="0.6002167" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -372,116 +535,120 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/guestbook/sign.phtml">
+    <entry file="file://$PROJECT_DIR$/library/Zend/Db/Table/Rowset/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="168" selection-end="168" vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/forms/Guestbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="1" selection-start="1519" selection-end="1519" vertical-scroll-proportion="1.6016427" vertical-offset="0" max-vertical-offset="870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/configs/application.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="769" selection-end="769" vertical-scroll-proportion="0.7407407" vertical-offset="0" max-vertical-offset="615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/guestbook/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="148" selection-end="148" vertical-scroll-proportion="0.12631579" vertical-offset="0" max-vertical-offset="475" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Guestbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="868" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="360">
+        <state line="401" column="27" selection-start="10026" selection-end="10033" vertical-scroll-proportion="-10.166667" vertical-offset="5486" max-vertical-offset="6330">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/Zend/View/Helper/HtmlPage.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+        <state line="9" column="33" selection-start="180" selection-end="180" vertical-scroll-proportion="3.1666667" vertical-offset="211" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/Zend/View/Helper/HeadScript.php">
+    <entry file="file://$PROJECT_DIR$/library/Zend/View/Helper/Form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="31" selection-start="7164" selection-end="7164" vertical-scroll-proportion="3.5" vertical-offset="3024" max-vertical-offset="7455">
+        <state line="33" column="27" selection-start="1116" selection-end="1137" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/GuestbookController.php">
+    <entry file="file://$PROJECT_DIR$/library/Zend/View/Helper/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="391" selection-end="391" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="645">
+        <state line="34" column="15" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/GuestbookMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/helpers/Mason.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="0.23104265" vertical-offset="0" max-vertical-offset="844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/CategoryMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="0" selection-end="1193" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/ImageMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="1" selection-start="932" selection-end="932" vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="117" selection-end="415" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="404" selection-end="404" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="114" selection-end="114" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/ProductMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="27" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-28.916666" vertical-offset="86" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/MasonController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="600" selection-end="600" vertical-scroll-proportion="0.34562212" vertical-offset="0" max-vertical-offset="868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/masonry.pkgd.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24546" selection-start="24682" selection-end="24682" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/imagesloaded.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="836" column="0" selection-start="29436" selection-end="29436" vertical-scroll-proportion="0.0" vertical-offset="10442" max-vertical-offset="12630">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery-1.10.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1018" column="10" selection-start="25237" selection-end="25237" vertical-scroll-proportion="0.0" vertical-offset="15767" max-vertical-offset="146925">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="170" selection-end="170" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="750">
+        <state line="73" column="0" selection-start="1789" selection-end="1789" vertical-scroll-proportion="-23.291666" vertical-offset="536" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/mason/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="28" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.7689573" vertical-offset="506" max-vertical-offset="1365">
-          <folding>
-            <element signature="e#6#40#0" expanded="true" />
-          </folding>
+        <state line="80" column="34" selection-start="2734" selection-end="2734" vertical-scroll-proportion="-17.666666" vertical-offset="731" max-vertical-offset="1575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="209" selection-end="209" vertical-scroll-proportion="0.17281106" vertical-offset="0" max-vertical-offset="868">
+          <folding />
         </state>
       </provider>
     </entry>

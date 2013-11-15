@@ -1,4 +1,7 @@
 <?php
+function pr($array) {
+    die(time()  .  "<pre>" . print_r( $array, 1));
+}
 
 // no native support, so hardcoded
 error_reporting(E_ALL);

@@ -30,26 +30,58 @@
         } else return false;
     }
 
+    protected  function getUrlPath () {
+        $request = $this->getRequest();
+        RETURN DIRECTORY_SEPARATOR
+            . $request->getControllerName()
+            . DIRECTORY_SEPARATOR
+            . $request->getActionName()
+            . DIRECTORY_SEPARATOR;
+    }
+
 
      public function init()
     {
         /* Initialize action controller here */
 
+        // Load an extra helper for this controller
+
+        $this->view->addHelperPath(
+            '/home/bas/vhosts/zend/zf_test/application/views/helpers/',
+            'Zend_View_Helper_Mason'
+        );
     }
 
      /**
       * Action body
       */
      public function indexAction() {
-
         // get counter from request for pagination
         $request = $this->getRequest();
-        // check if is ajaxRequest
+        $this->view->urlPath = $this->getUrlPath();
+
+         // check if is ajaxRequest
         if ( $this->CheckAjax($request) ) {
             // Get the products and die Json
             $products = new Application_Model_ProductMapper();
             $products = $products->fetchJson();
-            die($products);
+            die( $products);
         }
-    }
+         $this->renderScript('mason/index.phtml');
+     }
+
+     public function categoryAction() {
+
+        $request = $this->getRequest();
+        $this->view->urlPath = $this->getUrlPath();
+
+         // check if is ajaxRequest
+        if ( $this->CheckAjax($request) ) {
+            // Get the categories and die JSON
+            $categories = new Application_Model_CategoryMapper();
+            $categories = $categories->fetchJson();
+            die($categories);
+        }
+        $this->renderScript('mason/index.phtml');
+     }
 }

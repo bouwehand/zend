@@ -18,8 +18,8 @@
 }
 
 .item {
-    width: 200px;
-    height:200px;
+    min-width: 200px;
+    min-height:200px;
     background-color: #0099FF
 }
 .item.w2 {
