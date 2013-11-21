@@ -18,6 +18,9 @@
         <controllerFile controllerName="Mason">
           <actionMethod actionName="index"/>
         </controllerFile>
+        <controllerFile controllerName="Ex">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Guestbook"/>
@@ -33,6 +36,7 @@
           <dbTableFile dbTableName="Product"/>
           <dbTableFile dbTableName="Category"/>
           <dbTableFile dbTableName="Image"/>
+          <dbTableFile dbTableName="Ex"/>
         </dbTableDirectory>
         <modelFile modelName="GuestbookMapper"/>
         <modelFile modelName="Guestbook"/>
@@ -41,6 +45,8 @@
         <modelFile modelName="Category"/>
         <modelFile modelName="Image"/>
         <modelFile modelName="ImageMapper"/>
+        <modelFile modelName="Ex"/>
+        <modelFile modelName="ExMapper"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <viewsDirectory>
@@ -52,6 +58,9 @@
             <viewScriptFile forActionName="error"/>
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Guestbook">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Ex">
             <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
